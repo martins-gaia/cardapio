@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="O melhor Pit-Dog da Região" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:type" content="" />
+
+    <link rel="stylesheet" href="styles/output.css">
+    <title>Pit-Dog Assador</title>
+</head>
+
+<body>
+
+    <header class="w-full h-[420px] bg-zinc-900 bg-Home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-1.png" alt="LogoHamburguer"
+                class="w-36 h-36 rounded-full shadon-lg hover:scale-110 duration-200 ">
+            <h1 class="text-4xl mt-4 mb-02 font-bold text-white">Pit Dog Assador</h1>
+            <span class="text-white font-medium">Av. Ubaldina naves de brito, Goiania-Go</span>
+            <span class="text-white font-medium">Faça seu pedido pelo telefone:  (62) 9 8102-5245</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á sáb - 18:00 as 22:00</span>
+            </div>
+        </div>
+    </header>
+
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <!--inicio menu-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-1.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">X-tudo</p>
+                    <p class="text-sm">Hambúrguer com bacon crocante.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X-tudo" data-price="18.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-2.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Bacon Burge</p>
+                    <p class="text-sm">Hambúrguer com bacon crocante.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bacon Burge"
+                            data-price="18.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-3.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Big Mac</p>
+                    <p class="text-sm"> hambúrgueres com queijo, alface, cebola e molho especial.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 29.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Big Mac" data-price="29.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-4.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Whopper</p>
+                    <p class="text-sm"> Hambúrguer com queijo, alface, tomate, cebola e maionese.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whopper" data-price="15.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-4.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Hambúrguer de Frango</p>
+                    <p class="text-sm"> Feito com carne de frango em vez de carne bovina.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 22.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hambúrguer de Frango"
+                            data-price="22.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-6.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Veggie Burger</p>
+                    <p class="text-sm">Hambúrguer vegetariano feito com ingredientes como feijão, grão-de-bico ou
+                        cogumelos.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Veggie Burger"
+                            data-price="12.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-7.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Black Angus Burger</p>
+                    <p class="text-sm">Hambúrguer feito com carne de Angus, conhecida por sua qualidade e sabor.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 29.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Black Angus Burger"
+                            data-price="29.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/hamb-8.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 24.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="24.99">
+                            <i class=" text-lg text-white">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <div class="max-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl md:text-3xl text-center mt-9 mb-6">Bebidas</h2>
+        </div>
+        <!--grid bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+            id="menu">
+
+            <!-- bebida itens-->
+            <div class="flex gap-3 w-full">
+                <img src="./assets/refri-2.png" alt="lata de refrigerante"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Guarana Antartica Lata</p>
+
+
+                    <div class="flex items-center gap-2 justify-betwee mt-3">
+                        <p class="font-bold text-lg">R$ 7.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana Antartica Lata"
+                            data-price="7.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  fim bebida itens-->
+
+            <!-- bebida itens-->
+            <div class="flex gap-3 w-full">
+                <img src="./assets/refri-1.png" alt="lata de refrigerante"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca lata</p>
+
+
+                    <div class="flex items-center gap-2 justify-betwee mt-3">
+                        <p class="font-bold text-lg">R$ 8.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca lata"
+                            data-price="8.90">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  fim bebida itens-->
+        </div>
+        <!-- fim grid bebidas-->
+
+        <div class="max-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl md:text-3xl text-center mt-9 mb-6"> Tabuas de frios</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+            id="menu">
+
+        
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_1.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="19.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_2.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 22.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="22.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_3.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="18.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_4.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 38.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="38.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_5.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 45.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="45.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_6.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="35.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_7.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 29.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="29.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_8.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="15.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- produtos itens-->
+            <div class="flex gap-3">
+                <img src="./assets/appe_9.png" alt="Hmburguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 cursor-pointer hover:rotate-3 duration-300">
+                    <div class="w-full">
+                    <p class="font-bold">Greek Burger</p>
+                    <p class="text-sm"> Hambúrguer com queijo feta, tomate, cebola e molho tzatziki.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25.99</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Greek Burger"
+                            data-price="25.99">
+                            <i class=" text-lg text-white ">Adicionar ao carrinho</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--fim menu-->
+
+    <!--modal cart-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+
+            <div id="cart-items" class="flex justify-between mb flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4"> Endereço de entrega</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1">
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--fim modal cart-->
+    <!--Button cart footer-->
+    <footer class="w-full bg-green-600 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Ver meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- fim Button cart footer-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
