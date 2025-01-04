@@ -6,6 +6,8 @@ const cartTotal = document.getElementById("cart-total")
 const checoutBtn = document.getElementById("checout-btn")
 const closeModalBtn = document.getElementById("close-modal-btn")
 const cartCount = document.getElementById("cart-count")
+const nameInput = document.getElementById("name")
+const nameWarn = document.getElementById("name-warn")
 const addressInput = document.getElementById("address")
 const addressWarn = document.getElementById("address-warn")
 
@@ -26,7 +28,7 @@ closeModalBtn.addEventListener("click", function () {
     cartModal.style.display = "none"
 })
 menu.addEventListener("click", function (event) {
-    // console.log(event.target)
+
 
     let parentButton = event.target.closest(".add-to-cart-btn")
 
@@ -110,6 +112,16 @@ addressInput.addEventListener("input", function (event) {
     }
 
 })
+
+nameInput.addEventListener("input", function (event) {
+    let inputValue = event.target.value
+    if (inputValue !== "") {
+        nameInput.classList.remove("border-red-500")
+        nameWarn.classList.add("hidden")
+    }
+
+})
+
 checoutBtn.addEventListener("click", function () {
 
     const isOpen = checoutRestauranteOpen()
@@ -134,14 +146,22 @@ checoutBtn.addEventListener("click", function () {
         addressInput.classList.add("border-red-500")
         return
     }
+
+    if (cart.length === 0) return
+    if (nameInput.value === "") {
+        nameWarn.classList.remove("hidden")
+        nameInput.classList.add("border-red-500")
+        return
+    }
+
     const cartItems = cart.map((item) => {
         return (
-            `${item.name} Quantidade: (${item.quantity}) preço: R$${item.price} |`
+            `${item.name} Quantidade: (${item.quantity}) preço: R$${item.price * item.quantity} |`
         )
     }).join("")
     const menssage = encodeURIComponent(cartItems)
     const phone = "+5562981025245"
-    window.open(`https://wa.me/${phone}?text=${menssage} Endereço: ${addressInput.value}`, "_blank")
+    window.open(`https://wa.me/${phone}?text=${menssage} Total: ${cartTotal.textContent} Nome: ${nameInput.value} Endereço: ${addressInput.value}`, "_blank")
     cart = []
     updateCartModal()
 
@@ -149,7 +169,7 @@ checoutBtn.addEventListener("click", function () {
 function checoutRestauranteOpen() {
     const data = new Date()
     const hora = data.getHours()
-    return hora >= 18 && hora < 22;
+    return hora >= 8 && hora < 22;
 }
 
 const spanItem = document.getElementById("date-span")
